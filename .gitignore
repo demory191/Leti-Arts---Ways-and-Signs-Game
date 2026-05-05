@@ -34,3 +34,5 @@ obj/
 # OS SPECIFIC 
 .DS_Store
 Thumbs.db
+
+Assets/*
