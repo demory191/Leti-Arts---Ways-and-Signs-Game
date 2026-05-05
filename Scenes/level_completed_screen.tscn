@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbk60ludaclvn"]
+
+[ext_resource type="Texture2D" uid="uid://dalu6llkctrm8" path="res://doors of truth Assets/temp_level1_completed_message.png" id="1_360bf"]
+
+[node name="LevelCompletedScreen" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 325)
+scale = Vector2(1.3949, 1.13684)
+texture = ExtResource("1_360bf")

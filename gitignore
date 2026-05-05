@@ -1,0 +1,36 @@
+.godot/
+*.import
+*.uid
+*.cache
+export_preset.cfg
+
+# android/
+# ios/
+
+# For .NET
+bin/
+obj/
+
+# Ignore user-specific overrides/settings
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+.vs/
+.idea/
+.vscode/
+
+#  NEOVIM & ROSLYN 
+# Roslyn LSP artifacts
+.roslyn/
+# Neovim temp/swap files
+*.swp
+*.swo
+*.swn
+.netrwhist
+# Godot communication pipe
+*.pipe
+
+# OS SPECIFIC 
+.DS_Store
+Thumbs.db

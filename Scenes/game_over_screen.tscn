@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://oyraihvtv1dt"]
+
+[ext_resource type="Texture2D" uid="uid://c8g4nl1dwiw1n" path="res://doors of truth Assets/gameover_screen_image.png" id="1_ygy5v"]
+
+[node name="GameOverScreen" type="Node2D"]
+
+[node name="BackgroundImage" type="Sprite2D" parent="."]
+position = Vector2(578, 324.5)
+scale = Vector2(0.166041, 0.16413)
+texture = ExtResource("1_ygy5v")

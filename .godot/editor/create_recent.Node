@@ -1,0 +1,12 @@
+Node3D
+Sprite2D
+AudioStreamPlayer
+Label
+CanvasLayer
+Marker3D
+MeshInstance3D
+MultiMeshInstance3D
+CollisionShape3D
+Area3D
+Sprite3D
+SpotLight3D
