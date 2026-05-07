@@ -4,7 +4,19 @@
 [ext_resource type="PackedScene" uid="uid://dj26sacnhty4r" path="res://addons/devblocks/blocks/basic_block.tscn" id="2_vsnoi"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="3_y37eu"]
 [ext_resource type="Texture2D" uid="uid://cgp4mvev1cbra" path="res://addons/devblocks/textures/purple/texture_01.png" id="4_a6cad"]
+[ext_resource type="Texture2D" uid="uid://ducdkdse1tjbk" path="res://Assets/Symbols_chart_half.png" id="5_l53as"]
+[ext_resource type="Texture2D" uid="uid://b65bkkyoxbvhg" path="res://Assets/Wake_room_Message.png" id="6_3sk1a"]
+[ext_resource type="Texture2D" uid="uid://brhinfhe6kkc6" path="res://Assets/Heiroglyphic symbols/SCARAB_symbol.png" id="7_aerfg"]
+[ext_resource type="Texture2D" uid="uid://bpkagpjdnqinp" path="res://Assets/Heiroglyphic symbols/BA.png" id="8_betor"]
+[ext_resource type="Texture2D" uid="uid://c3e0ig7rxn4em" path="res://Assets/Heiroglyphic symbols/UDJAT.png" id="8_nmsli"]
+[ext_resource type="Texture2D" uid="uid://cpa8yaqbpno8o" path="res://Assets/ba_riddle.png" id="9_betor"]
+[ext_resource type="Texture2D" uid="uid://c4uqv4rwldax5" path="res://Assets/Heiroglyphic symbols/Ordinary-Flamengo.png" id="12_vjtdm"]
+[ext_resource type="Texture2D" uid="uid://ci5uvcuxb25o2" path="res://Assets/Scarab riddle (cropped).png" id="13_bgw3c"]
+[ext_resource type="Texture2D" uid="uid://d21rv5g0m7hfr" path="res://Assets/Heiroglyphic symbols/KA.png" id="14_bgw3c"]
 [ext_resource type="Script" uid="uid://cm0nh2p1nv1fs" path="res://levels/WrongEntranceArea3D.gd" id="14_dmjim"]
+[ext_resource type="Texture2D" uid="uid://cslihgtphv1s" path="res://Assets/Heiroglyphic symbols/MES.png" id="15_7nvrk"]
+[ext_resource type="Texture2D" uid="uid://g022m1kowxpm" path="res://Assets/Heiroglyphic symbols/SEMA.png" id="16_jkxa6"]
+[ext_resource type="Texture2D" uid="uid://polh85c3i3bu" path="res://Assets/ka_riddle_3.png" id="17_w75he"]
 [ext_resource type="Script" uid="uid://cba7q4mn8lhr8" path="res://WrongEntranceRiddleRoom2Area3D.gd" id="28_vfrdu"]
 [ext_resource type="Script" uid="uid://p5f7symqmyhi" path="res://RightEntranceArea3D.gd" id="29_frfs0"]
 
@@ -28,6 +40,7 @@ size = Vector3(0.605028, 1, 0.714641)
 
 [node name="Level1" type="Node3D" unique_id=409684126]
 script = ExtResource("1_1jcm8")
+no_of_chances = 1
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=318704498]
 environment = SubResource("Environment_l5pxq")
@@ -38,7 +51,7 @@ block_color_group = 1
 block_style = 2
 
 [node name="Player" parent="." unique_id=1330932053 instance=ExtResource("3_y37eu")]
-transform = Transform3D(-0.33301, 0, 0.947903, 0, 1.36807, 0, -0.947903, 0, -0.33301, 35.6477, 3.52836, -11.9004)
+transform = Transform3D(-0.33301, 0, 0.947903, 0, 1.36807, 0, -0.947903, 0, -0.33301, 36.49246, 3.52836, -11.67696)
 
 [node name="DirectionalLight3d" type="DirectionalLight3D" parent="." unique_id=245653828]
 transform = Transform3D(0.966349, 0.250904, -0.0567091, 0.182362, -0.512743, 0.838951, 0.181419, -0.821061, -0.541244, -0.00693703, 59.5145, -109.348)
@@ -53,7 +66,7 @@ block_color_group = 3
 block_style = 2
 
 [node name="BasicBlock" parent="." unique_id=128058104 instance=ExtResource("2_vsnoi")]
-transform = Transform3D(364.142, 0, 0, 0, 2.89073, 0, 0, 0, 724.024, 0, 0, 0)
+transform = Transform3D(364.142, 0, 0, 0, 2.89073, 0, 0, 0, 724.024, -0.22429657, 0, 0.1614685)
 
 [node name="BasicBlock2" parent="." unique_id=613218143 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(-2.20505, 0, -3.88346, 0, 1, 0, 6.6236, 0, -1.29283, -133.591, 0.908197, -22.4728)
@@ -76,8 +89,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.7909, 0, -10.1801)
 
 [node name="BasicBlock8" parent="StartRoom" unique_id=1762443192 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(2, 0, 0, 0, 5, 0, 0, 0, 6.72, -6.67393, 2.952, 0)
-block_color_group = 3
-block_style = 2
 
 [node name="BasicBlock11" parent="StartRoom" unique_id=1337052951 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(-8.74228e-08, 0, -10.3499, 0, 5, 0, 2, 0, -4.52408e-07, -1, 2.952, -4)
@@ -111,10 +122,12 @@ transform = Transform3D(0.686403, -0.722934, 0.0788483, 0.271426, 0.35527, 0.894
 [node name="SymbolsChart" type="Sprite3D" parent="StartRoom" unique_id=197111191]
 transform = Transform3D(-2.8177e-08, 0, -1.00649, 0, 0.563819, 0, 0.644614, 0, -4.39952e-08, -5.65313, 2.6898, -0.268881)
 flip_h = true
+texture = ExtResource("5_l53as")
 
 [node name="WakeRoomMessage" type="Sprite3D" parent="StartRoom" unique_id=693216825]
 transform = Transform3D(-1.51613e-08, 0, -1.00649, 0, 0.287371, 0, 0.34685, 0, -4.39952e-08, -5.66736, 4.12652, -0.248039)
 flip_h = true
+texture = ExtResource("6_3sk1a")
 
 [node name="PlayerStartPoint" type="Marker3D" parent="StartRoom" unique_id=1805622937]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.508144, 1.61381, -1.78914)
@@ -123,84 +136,66 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.508144, 1.61381, -1.78914)
 transform = Transform3D(-1.74831, 0, -2.00985e-07, 0, 2.55081, 0, 1.52842e-07, 0, -2.299, 23.7505, -1.99633, 16.1852)
 
 [node name="BasicBlock8" parent="RiddleRoom0" unique_id=951936813 instance=ExtResource("2_vsnoi")]
-transform = Transform3D(1.99651, 0, 0, 0, 4.99127, 0, 2.84217e-14, 0, 6.70826, -5, 2.952, -4.76837e-07)
+transform = Transform3D(1.99651, 0, -9.549672e-14, 0, 4.99127, 0, 2.8421701e-14, 0, 6.70826, -5, 2.952, -4.76837e-07)
 block_color_group = 3
 block_style = 2
-
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom0/BasicBlock8" unique_id=1637840617]
 
 [node name="BasicBlock12" parent="RiddleRoom0" unique_id=1616183889 instance=ExtResource("2_vsnoi")]
-transform = Transform3D(-8.74228e-08, 0, -3.36, 0, 5, 0, 2, 0, -1.4687e-07, 1, 2.952, 3)
+transform = Transform3D(-8.742278e-08, 0, -3.36, 0, 5, 0, 2, 0, -1.4687026e-07, 1, 2.952, 3)
 block_color_group = 3
 block_style = 2
-
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom0/BasicBlock12" unique_id=193732506]
 
 [node name="BasicBlock13" parent="RiddleRoom0" unique_id=415632023 instance=ExtResource("2_vsnoi")]
-transform = Transform3D(-8.74228e-08, 0, -3.36, 0, 5, 0, 2, 0, -1.4687e-07, -4, 2.952, 3)
+transform = Transform3D(-8.742278e-08, 0, -3.36, 0, 5, 0, 2, 0, -1.4687026e-07, -4, 2.952, 3)
 block_color_group = 3
 block_style = 2
-
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom0/BasicBlock13" unique_id=803797460]
 
 [node name="BasicBlock9" parent="RiddleRoom0" unique_id=304746088 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(2, 0, 0, 0, 5, 0, 0, 0, 6.72, 2, 2.952, 0)
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom0/BasicBlock9" unique_id=602024299]
-
 [node name="BasicBlock10" parent="RiddleRoom0" unique_id=1888834711 instance=ExtResource("2_vsnoi")]
-transform = Transform3D(8.42935, 0, 5.68434e-14, 0, 2.891, 0, -6.82121e-13, 0, 10.9991, -2, 6, -2.7688)
-
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom0/BasicBlock10" unique_id=1678099027]
+transform = Transform3D(8.42935, 0, 8.900707e-13, 0, 2.891, 0, -6.82121e-13, 0, 10.9991, -2, 6, -2.7688)
 
 [node name="BasicBlock11" parent="RiddleRoom0" unique_id=499057408 instance=ExtResource("2_vsnoi")]
-transform = Transform3D(-0.555556, 0, -3.37698e-07, 0, 4.45725, 0, -7.60529e-08, 0, 6.04877, 0.7512, 3.4601, -6.37958)
+transform = Transform3D(-0.555556, -3.896652e-07, -9.1333885e-07, -4.8568246e-08, 4.45725, 0, -8.3886626e-08, -5.883781e-14, 6.04877, 0.7512, 3.4601, -6.37958)
 block_color_group = 3
 block_style = 2
-
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom0/BasicBlock11" unique_id=1885434996]
 
 [node name="BasicBlock14" parent="RiddleRoom0" unique_id=1469445781 instance=ExtResource("2_vsnoi")]
-transform = Transform3D(-0.555556, 0, -3.37698e-07, 0, 4.45725, 0, -7.60529e-08, 0, 6.04877, -3.73672, 3.4601, -6.37958)
+transform = Transform3D(-0.555556, -3.896652e-07, -9.1333885e-07, -4.8568246e-08, 4.45725, 0, -8.3886626e-08, -5.883781e-14, 6.04877, -3.73672, 3.4601, -6.37958)
 block_color_group = 3
 block_style = 2
-
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom0/BasicBlock14" unique_id=1426087567]
 
 [node name="BasicBlock16" parent="RiddleRoom0" unique_id=1844722000 instance=ExtResource("2_vsnoi")]
-transform = Transform3D(-0.555556, 0, -3.37698e-07, 0, 4.45725, 0, -7.60529e-08, 0, 6.04877, -1.52575, 3.4601, -6.37958)
+transform = Transform3D(-0.555556, -3.896652e-07, -9.1333885e-07, -4.8568246e-08, 4.45725, 0, -8.3886626e-08, -5.883781e-14, 6.04877, -1.52575, 3.4601, -6.37958)
 block_color_group = 3
 block_style = 2
-
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom0/BasicBlock16" unique_id=336234762]
 
 [node name="BasicBlock17" parent="RiddleRoom0" unique_id=1185327597 instance=ExtResource("2_vsnoi")]
-transform = Transform3D(1.00337e-07, 0, -6.04877, 0, 4.45724, 0, -0.555556, 0, -6.02097e-07, -1.85969, 5.6981, -3.59465)
+transform = Transform3D(1.08170745e-07, 7.5870435e-14, -6.04877, -4.8568246e-08, 4.45724, 0, -0.555556, -3.896643e-07, -1.1777389e-06, -1.85969, 5.6981, -3.59465)
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom0/BasicBlock17" unique_id=378894921]
-
 [node name="BasicBlock18" parent="RiddleRoom0" unique_id=2072051208 instance=ExtResource("2_vsnoi")]
-transform = Transform3D(1.00337e-07, 0, -6.04877, 0, 4.45724, 0, -0.555556, 0, -6.02096e-07, -1.85969, 7.55879, -7.68932)
+transform = Transform3D(1.08170745e-07, 7.5870435e-14, -6.04877, -4.8568246e-08, 4.45724, 0, -0.555556, -3.896643e-07, -1.1777389e-06, -1.85969, 7.55879, -7.68932)
 block_color_group = 3
 block_style = 2
 
 [node name="BasicBlock19" parent="RiddleRoom0" unique_id=1765196261 instance=ExtResource("2_vsnoi")]
-transform = Transform3D(1.50551e-07, 0, -6.04877, 0, 2.55063, 0, -0.833587, 0, -6.02096e-07, -1.85969, 4.93263, 2.77628)
+transform = Transform3D(1.6230537e-07, 4.3416422e-14, -6.04877, -7.287449e-08, 2.55063, 0, -0.833587, -2.2298316e-07, -1.1777389e-06, -1.85969, 4.93263, 2.77628)
 block_color_group = 3
 block_style = 2
-
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom0/BasicBlock19" unique_id=1646840367]
 
 [node name="ScarabSymbol" type="Sprite3D" parent="RiddleRoom0" unique_id=1536493354]
 transform = Transform3D(0.140568, 4.00433e-09, 4.32989e-08, -7.84777e-09, -3.13517e-09, 0.775555, 7.84774e-09, -0.0717244, -3.39007e-08, -0.38357, 1.3714, -2.90561)
 visible = false
+texture = ExtResource("7_aerfg")
 
-[node name="ScarabSymbol2" type="Sprite3D" parent="RiddleRoom0" unique_id=2131967937]
+[node name="BaSymbol" type="Sprite3D" parent="RiddleRoom0" unique_id=2131967937]
 transform = Transform3D(0.140568, -4.24108e-09, -4.58586e-08, 8.3119e-09, 0.0717244, 1.16993e-13, 8.31187e-09, 2.61554e-15, 0.775555, -0.38357, 3.02944, -3.34058)
+texture = ExtResource("8_betor")
 
 [node name="UdjatSymbol" type="Sprite3D" parent="RiddleRoom0" unique_id=1598447387]
 transform = Transform3D(0.152319, 3.94669e-09, 4.3299e-08, -8.50384e-09, -3.09006e-09, 0.775555, 8.5038e-09, -0.0706926, -3.39007e-08, -2.64464, 1.37012, -2.92008)
@@ -208,9 +203,11 @@ visible = false
 
 [node name="UdjatSymbol2" type="Sprite3D" parent="RiddleRoom0" unique_id=1522376909]
 transform = Transform3D(0.152319, -4.1801e-09, -4.58585e-08, 9.00673e-09, 0.0706926, 1.22565e-13, 9.0067e-09, 1.07326e-14, 0.775555, -2.64464, 3.04273, -3.35505)
+texture = ExtResource("8_nmsli")
 
 [node name="BaRiddle" type="Sprite3D" parent="RiddleRoom0" unique_id=2014288854]
 transform = Transform3D(0.380785, 0, 0, 0, 0.364382, 0, 1.59872e-14, 0, 1, -1.49464, 3.97169, -3.2669)
+texture = ExtResource("9_betor")
 
 [node name="WrongEntranceArea3D2" type="Area3D" parent="RiddleRoom0" unique_id=1188459954]
 transform = Transform3D(2.10541, 0, 2.62901e-13, 0, 1, 0, -1.13687e-13, 0, 1, -2.69987, 2.32369, -3.77467)
@@ -224,10 +221,6 @@ shape = SubResource("BoxShape3D_swnh0")
 [node name="RiddleRoom1Marker" type="Marker3D" parent="RiddleRoom0" unique_id=1485082604]
 transform = Transform3D(0.0638555, 0, -0.270339, 0, 0.392032, 0, 0.423323, 0, 0.0999913, -0.890111, 2.35076, 0.808294)
 
-[node name="GroovedConcretePlaneMesh" parent="RiddleRoom0" unique_id=568404489]
-transform = Transform3D(2.55186, 0, 8.52651e-14, 0, 1, 0, 4.26326e-14, 0, 2.65079, -1.42457, 1.35823, -0.642005)
-skeleton = NodePath("")
-
 [node name="RiddleRoom1" type="Node3D" parent="." unique_id=920283318]
 transform = Transform3D(-3.6, 0, -2.00985e-07, 0, 2.55081, 0, 3.14722e-07, 0, -2.299, 21.0178, -1.99633, 61.8851)
 
@@ -236,77 +229,48 @@ transform = Transform3D(2, 0, 0, 0, 5, 0, 0, 0, 6.72, -5, 2.952, 0)
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom1/BasicBlock8" unique_id=548079653]
-transform = Transform3D(1.00123, 0, 7.10543e-14, 0, 1, 0, 0, 0, 1, 0, 0, 0)
-
 [node name="BasicBlock12" parent="RiddleRoom1" unique_id=1476753211 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(-6.27339e-08, 0, -3.53073, 0, 3.90673, 0, 1.43518, 0, -1.54333e-07, 1.51735, 2.952, 3)
 block_color_group = 3
 block_style = 2
-
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom1/BasicBlock12" unique_id=1734326225]
-transform = Transform3D(1.00786, 0, 2.84217e-14, 0, 1, 0, 0, 0, 1.01193, 0, 0, 0)
 
 [node name="BasicBlock13" parent="RiddleRoom1" unique_id=1063078515 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(-4.44317e-08, 0, -3.88959, 0, 5, 0, 1.01648, 0, -1.70019e-07, -4.67583, 2.952, 3)
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom1/BasicBlock13" unique_id=1639257274]
-transform = Transform3D(1.01455, 0, 0, 0, 1, 0, 1.11022e-15, 0, 1.00775, 0, 0, 0)
-
 [node name="BasicBlock9" parent="RiddleRoom1" unique_id=820801904 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(2, 0, 0, 0, 5, 0, 0, 0, 6.72, 2, 2.952, 0)
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom1/BasicBlock9" unique_id=75795942]
-transform = Transform3D(1.01775, 0, 7.10543e-14, 0, 1, 0, 1.77636e-14, 0, 1, 0, 0, 0)
-
 [node name="BasicBlock10" parent="RiddleRoom1" unique_id=1005008739 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(8.42935, 0, 5.68434e-14, 0, 2.891, 0, -6.82121e-13, 0, 10.9991, -2, 6, -2.7688)
-
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom1/BasicBlock10" unique_id=1054343513]
 
 [node name="BasicBlock11" parent="RiddleRoom1" unique_id=1123271927 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(-0.555556, 0, -3.37698e-07, 0, 4.45725, 0, -7.60529e-08, 0, 6.04877, 0.7512, 3.4601, -6.37958)
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom1/BasicBlock11" unique_id=8855749]
-transform = Transform3D(1.1, 0, 5.42101e-20, 0, 1, 0, -8.47033e-22, 0, 1.03594, 0, 0, 0)
-
 [node name="BasicBlock14" parent="RiddleRoom1" unique_id=127605115 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(-0.555556, 0, -3.37698e-07, 0, 4.45725, 0, -7.60529e-08, 0, 6.04877, -3.73672, 3.4601, -6.37958)
 block_color_group = 3
 block_style = 2
-
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom1/BasicBlock14" unique_id=970686532]
-transform = Transform3D(1.02052, 0, 2.1684e-19, 0, 1.00053, 0, 0, 0, 1.0211, 0, 0, 0)
 
 [node name="BasicBlock15" parent="RiddleRoom1" unique_id=107900009 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(-0.555556, 0, -3.37698e-07, 0, 4.45725, 0, -7.60529e-08, 0, 6.04877, -2.2418, 3.4601, -6.37958)
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom1/BasicBlock15" unique_id=2048153478]
-transform = Transform3D(1.0033, 0, 1.0842e-19, 0, 1.00276, 0, -1.69407e-21, 0, 1.00443, 0, 0, 0)
-
 [node name="BasicBlock16" parent="RiddleRoom1" unique_id=588804084 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(-0.555556, 0, -3.37698e-07, 0, 4.45725, 0, -7.60529e-08, 0, 6.04877, -0.748481, 3.4601, -6.37958)
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom1/BasicBlock16" unique_id=569216377]
-transform = Transform3D(1.10007, 0, 0, 0, 1.00006, 0, -1.69407e-21, 0, 1.00962, 0, 0, 0)
-
 [node name="BasicBlock17" parent="RiddleRoom1" unique_id=958923702 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(1.00337e-07, 0, -6.04877, 0, 4.45724, 0, -0.555556, 0, -6.02097e-07, -1.85969, 5.6981, -3.59465)
 block_color_group = 3
 block_style = 2
-
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom1/BasicBlock17" unique_id=1492287029]
-transform = Transform3D(1.01413, 0, -5.68434e-14, 0, 1.01569, 0, -1.77636e-15, 0, 1, 0, 0, 0)
 
 [node name="BasicBlock18" parent="RiddleRoom1" unique_id=1207613673 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(1.00337e-07, 0, -6.04877, 0, 4.45724, 0, -0.555556, 0, -6.02096e-07, -1.85969, 7.55879, -7.68932)
@@ -318,20 +282,21 @@ transform = Transform3D(1.50551e-07, 0, -6.04877, 0, 2.55063, 0, -0.833587, 0, -
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom1/BasicBlock19" unique_id=1790867558]
-transform = Transform3D(1.02431, 0, 1.7053e-13, 0, 1.01171, 0, 1.06581e-14, 0, 1, 0, 0, 0)
-
 [node name="ScarabSymbol" type="Sprite3D" parent="RiddleRoom1" unique_id=136186285]
 transform = Transform3D(0.0786634, 1.37796e-14, 4.583e-13, 2.47218e-14, 0.0686114, 1.19779e-13, -8.88178e-16, 1.4385e-15, 0.775555, -3.04868, 3.01456, -3.45049)
+texture = ExtResource("7_aerfg")
 
 [node name="UdjatSymbol" type="Sprite3D" parent="RiddleRoom1" unique_id=416560078]
 transform = Transform3D(0.078788, 2.46716e-15, 5.61329e-13, 4.56135e-14, 0.0709439, 2.03346e-13, 3.10862e-14, 2.02825e-14, 0.775553, 0.0275545, 3.0367, -3.39261)
+texture = ExtResource("8_nmsli")
 
 [node name="FlamengoSymbol" type="Sprite3D" parent="RiddleRoom1" unique_id=529677235]
 transform = Transform3D(0.076489, -9.86865e-15, 6.96332e-13, 2.43736e-14, 0.0747956, 2.507e-13, 8.88178e-15, 1.2749e-14, 0.775552, -1.48761, 3.05255, -3.46769)
+texture = ExtResource("12_vjtdm")
 
 [node name="ScarabRiddle" type="Sprite3D" parent="RiddleRoom1" unique_id=965571114]
 transform = Transform3D(0.320702, 0, 3.55271e-15, 0, 0.240032, 0, 1.06581e-14, 0, 1, -1.49464, 3.99143, -3.22889)
+texture = ExtResource("13_bgw3c")
 
 [node name="WrongEntranceArea3D2" type="Area3D" parent="RiddleRoom1" unique_id=444401590]
 transform = Transform3D(1, 0, 6.75016e-14, 0, 0.999999, 0, -5.68434e-14, 0, 1, -1.51015, 2.32369, -3.77468)
@@ -356,56 +321,8 @@ transform = Transform3D(0.0638555, 0, -0.270339, 0, 0.392032, 0, 0.423323, 0, 0.
 
 [node name="RiddleRoom1Floor" type="Node3D" parent="RiddleRoom1" unique_id=736956752]
 
-[node name="GroovedConcretePlaneMesh" parent="RiddleRoom1/RiddleRoom1Floor" unique_id=848996565]
-transform = Transform3D(1.23338, 0, 0, 0, 1.00231, 0, 1.42109e-14, 0, 1.00231, -2.78965, 1.35572, -2.3152)
-skeleton = NodePath("../..")
-
-[node name="GroovedConcretePlaneMesh5" parent="RiddleRoom1/RiddleRoom1Floor" unique_id=1040594611]
-transform = Transform3D(1.23338, 0, 0, 0, 1.00231, 0, 0, 0, 1.00231, -2.78965, 1.35572, -0.295341)
-skeleton = NodePath("../..")
-
-[node name="GroovedConcretePlaneMesh6" parent="RiddleRoom1/RiddleRoom1Floor" unique_id=933741814]
-transform = Transform3D(1.23338, 0, 0, 0, 1.00231, 0, 0, 0, 1.04398, -2.78965, 1.35572, 1.75473)
-skeleton = NodePath("../..")
-
-[node name="GroovedConcretePlaneMesh2" parent="RiddleRoom1/RiddleRoom1Floor" unique_id=957452678]
-transform = Transform3D(1.26665, 0, 1.77636e-14, 0, 0.993311, 0, 9.9476e-14, 0, 0.993311, -0.303196, 1.35572, -2.3152)
-skeleton = NodePath("../..")
-
-[node name="GroovedConcretePlaneMesh3" parent="RiddleRoom1/RiddleRoom1Floor" unique_id=2077975502]
-transform = Transform3D(1.26665, 0, 1.77636e-14, 0, 0.993311, 0, 1.56319e-13, 0, 0.993311, -0.303196, 1.35572, -0.325399)
-skeleton = NodePath("../..")
-
-[node name="GroovedConcretePlaneMesh4" parent="RiddleRoom1/RiddleRoom1Floor" unique_id=2071852568]
-transform = Transform3D(1.26665, 0, 2.84217e-14, 0, 0.993311, 0, 3.69482e-13, 0, 1.10264, -0.306697, 1.35141, 1.72022)
-skeleton = NodePath("../..")
-
 [node name="RiddleRoom1Floor2" type="Node3D" parent="RiddleRoom1" unique_id=566944400]
 transform = Transform3D(1, 0, 7.10543e-15, 0, 1, 0, 4.26326e-14, 0, 1.0175, 4.76837e-07, 0, -6.15963)
-
-[node name="GroovedConcretePlaneMesh" parent="RiddleRoom1/RiddleRoom1Floor2" unique_id=205179531]
-transform = Transform3D(1.23338, 0, 0, 0, 1.00231, 0, 1.42109e-14, 0, 1.00231, -2.78965, 1.35572, -2.3152)
-skeleton = NodePath("../..")
-
-[node name="GroovedConcretePlaneMesh5" parent="RiddleRoom1/RiddleRoom1Floor2" unique_id=1274701390]
-transform = Transform3D(1.23338, 0, 0, 0, 1.00231, 0, 0, 0, 1.00231, -2.78965, 1.35572, -0.295341)
-skeleton = NodePath("../..")
-
-[node name="GroovedConcretePlaneMesh6" parent="RiddleRoom1/RiddleRoom1Floor2" unique_id=145404476]
-transform = Transform3D(1.23338, 0, 0, 0, 1.00231, 0, 0, 0, 1.04398, -2.78965, 1.35572, 1.75473)
-skeleton = NodePath("../..")
-
-[node name="GroovedConcretePlaneMesh2" parent="RiddleRoom1/RiddleRoom1Floor2" unique_id=1471004564]
-transform = Transform3D(1.26665, 0, 1.77636e-14, 0, 0.993311, 0, 9.9476e-14, 0, 0.993311, -0.303196, 1.35572, -2.3152)
-skeleton = NodePath("../..")
-
-[node name="GroovedConcretePlaneMesh3" parent="RiddleRoom1/RiddleRoom1Floor2" unique_id=1765305773]
-transform = Transform3D(1.26665, 0, 1.77636e-14, 0, 0.993311, 0, 1.56319e-13, 0, 0.993311, -0.303196, 1.35572, -0.325399)
-skeleton = NodePath("../..")
-
-[node name="GroovedConcretePlaneMesh4" parent="RiddleRoom1/RiddleRoom1Floor2" unique_id=1826964183]
-transform = Transform3D(1.26665, 0, 2.84217e-14, 0, 0.993311, 0, 3.69482e-13, 0, 1.10264, -0.306697, 1.35141, 1.72022)
-skeleton = NodePath("../..")
 
 [node name="RiddleRoom2" type="Node3D" parent="." unique_id=1083622300]
 transform = Transform3D(-5.754, 0, -2.00985e-07, 0, 2.55081, 0, 5.0303e-07, 0, -2.299, 14.5398, -1.99633, 109.642)
@@ -415,82 +332,58 @@ transform = Transform3D(2, 0, 0, 0, 5, 0, 0, 0, 6.72, -5, 2.952, 0)
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom2/BasicBlock8" unique_id=1139663939]
-
 [node name="BasicBlock12" parent="RiddleRoom2" unique_id=672570075 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(-8.74228e-08, 0, -3.36, 0, 5, 0, 2, 0, -1.4687e-07, 1, 2.952, 3)
 block_color_group = 3
 block_style = 2
-
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom2/BasicBlock12" unique_id=1243656548]
 
 [node name="BasicBlock13" parent="RiddleRoom2" unique_id=504503986 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(-8.74228e-08, 0, -4.36331, 0, 5, 0, 2, 0, -1.90727e-07, -5.61242, 2.952, 2.99998)
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom2/BasicBlock13" unique_id=2056172926]
-
 [node name="BasicBlock9" parent="RiddleRoom2" unique_id=933309239 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(2, 0, 0, 0, 5, 0, 0, 0, 6.72, 2, 2.952, 0)
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom2/BasicBlock9" unique_id=1853160344]
-
 [node name="BasicBlock10" parent="RiddleRoom2" unique_id=1876734630 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(8.42935, 0, 5.68434e-14, 0, 2.891, 0, -6.82121e-13, 0, 10.9991, -2, 6, -2.7688)
-
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom2/BasicBlock10" unique_id=1085307100]
 
 [node name="BasicBlock11" parent="RiddleRoom2" unique_id=648614078 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(-0.333334, 0, -3.37698e-07, 0, 4.45725, 0, -4.56317e-08, 0, 6.04877, 0.924993, 3.4601, -6.37958)
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom2/BasicBlock11" unique_id=185537753]
-
 [node name="BasicBlock15" parent="RiddleRoom2" unique_id=173147886 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(-0.333334, 0, -3.37698e-07, 0, 4.45725, 0, -4.56317e-08, 0, 6.04877, 0.0560327, 3.4601, -6.37958)
 block_color_group = 3
 block_style = 2
-
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom2/BasicBlock15" unique_id=1190393470]
 
 [node name="BasicBlock16" parent="RiddleRoom2" unique_id=1555042237 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(-0.333334, 0, -3.37698e-07, 0, 4.45725, 0, -4.56317e-08, 0, 6.04877, -0.812928, 3.4601, -6.37958)
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom2/BasicBlock16" unique_id=1988815493]
-
 [node name="BasicBlock20" parent="RiddleRoom2" unique_id=977545079 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(-0.333334, 0, -3.37698e-07, 0, 4.45725, 0, -4.56317e-08, 0, 6.04877, -1.85568, 3.4601, -6.37958)
 block_color_group = 3
 block_style = 2
-
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom2/BasicBlock20" unique_id=2087739694]
 
 [node name="BasicBlock21" parent="RiddleRoom2" unique_id=1202628216 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(-0.333334, 0, -3.37698e-07, 0, 4.45725, 0, -4.56317e-08, 0, 6.04877, -2.89843, 3.4601, -6.37958)
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom2/BasicBlock21" unique_id=1830717810]
-
 [node name="BasicBlock14" parent="RiddleRoom2" unique_id=1027465598 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(-0.311112, 0, -3.37698e-07, 0, 4.45725, 0, -4.25896e-08, 0, 6.04877, -3.91051, 3.4601, -6.37958)
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom2/BasicBlock14" unique_id=1138220715]
-
 [node name="BasicBlock17" parent="RiddleRoom2" unique_id=401376646 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(1.00337e-07, 0, -6.04877, 0, 4.45724, 0, -0.555556, 0, -6.02097e-07, -1.85969, 5.6981, -3.59465)
 block_color_group = 3
 block_style = 2
-
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom2/BasicBlock17" unique_id=1442669160]
 
 [node name="BasicBlock18" parent="RiddleRoom2" unique_id=1912071298 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(1.00337e-07, 0, -6.04877, 0, 4.45724, 0, -0.555556, 0, -6.02096e-07, -1.85969, 3.66703, -7.68932)
@@ -501,25 +394,29 @@ transform = Transform3D(1.50551e-07, 0, -6.04877, 0, 2.55063, 0, -0.833587, 0, -
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="RiddleRoom2/BasicBlock19" unique_id=1833998862]
-
 [node name="OrdinaryFlamengo" type="Sprite3D" parent="RiddleRoom2" unique_id=614906007]
 transform = Transform3D(0.0601151, 1.42116e-09, 1.62091e-08, -1.25639e-09, 0.0679989, 1.16993e-13, -1.25638e-09, 1.98175e-15, 0.775555, -2.37316, 3.05315, -3.41835)
+texture = ExtResource("12_vjtdm")
 
 [node name="KaSymbol" type="Sprite3D" parent="RiddleRoom2" unique_id=1612787325]
 transform = Transform3D(0.0438006, 1.33502e-09, 1.62091e-08, -9.15426e-10, 0.0638779, 1.19779e-13, -9.15381e-10, -3.19315e-15, 0.775555, -0.380182, 3.09537, -3.41835)
+texture = ExtResource("14_bgw3c")
 
 [node name="UdjatSymbol" type="Sprite3D" parent="RiddleRoom2" unique_id=1911921183]
 transform = Transform3D(0.0702117, 1.71259e-09, 1.62092e-08, -1.46736e-09, 0.0819435, 2.06131e-13, -1.46734e-09, 2.43273e-14, 0.775553, -3.43342, 3.08875, -3.46762)
+texture = ExtResource("8_nmsli")
 
 [node name="MesSymbol" type="Sprite3D" parent="RiddleRoom2" unique_id=717905541]
 transform = Transform3D(0.0426759, 1.35898e-09, 2.0341e-08, -8.91884e-10, 0.0650247, 2.58675e-13, -8.91885e-10, 1.54731e-14, 0.973244, 0.494308, 3.14446, -3.42946)
+texture = ExtResource("15_7nvrk")
 
 [node name="SemaSymbol" type="Sprite3D" parent="RiddleRoom2" unique_id=587215275]
 transform = Transform3D(0.0572945, 1.59404e-09, 1.62094e-08, -1.19746e-09, 0.0762708, 2.53486e-13, -1.19741e-09, 1.74524e-14, 0.775552, -1.33683, 3.06739, -3.46441)
+texture = ExtResource("16_jkxa6")
 
 [node name="KaRiddle" type="Sprite3D" parent="RiddleRoom2" unique_id=978672669]
 transform = Transform3D(0.202199, 0, 3.55271e-15, 0, 0.232605, 0, 2.4869e-14, 0, 1, -1.49464, 4.00844, -3.31526)
+texture = ExtResource("17_w75he")
 
 [node name="WrongEntranceArea3D" type="Area3D" parent="RiddleRoom2" unique_id=92405830]
 transform = Transform3D(0.761414, 0, 6.75016e-14, 0, 1.16604, 0, 1.27898e-13, 0, 1, -1.33581, 2.19042, -3.77466)
@@ -530,13 +427,13 @@ script = ExtResource("28_vfrdu")
 transform = Transform3D(1, 0, 8.88178e-15, 0, 0.999999, 0, 5.11591e-13, 0, 1.28985, 0, 0, -0.0241461)
 shape = SubResource("BoxShape3D_swnh0")
 
-[node name="WrongEntranceArea3D5" type="Area3D" parent="RiddleRoom2" unique_id=490226677]
-transform = Transform3D(0.761414, 0, 6.75016e-14, 0, 1.16604, 0, 1.42109e-13, 0, 1, -2.76, 2.19042, -3.77466)
+[node name="WrongEntranceArea3D3" type="Area3D" parent="RiddleRoom2" unique_id=1734919135]
+transform = Transform3D(0.76141405, 0, 6.750156e-14, 0, 1.16604, 0, 1.4210855e-13, 0, 1, -3.4624095, 2.19042, -3.7746582)
 collision_layer = 2
 script = ExtResource("28_vfrdu")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RiddleRoom2/WrongEntranceArea3D5" unique_id=1314685957]
-transform = Transform3D(1, 0, 1.06581e-14, 0, 0.999999, 0, 4.40536e-13, 0, 1.28985, -0.85422, -0.0902057, -0.0241432)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RiddleRoom2/WrongEntranceArea3D3" unique_id=940780617]
+transform = Transform3D(1, 0, 8.88178e-15, 0, 0.999999, 0, 5.11591e-13, 0, 1.28985, 0, 0, -0.0241461)
 shape = SubResource("BoxShape3D_swnh0")
 
 [node name="WrongEntranceArea3D6" type="Area3D" parent="RiddleRoom2" unique_id=1611660409]
@@ -557,51 +454,26 @@ script = ExtResource("28_vfrdu")
 transform = Transform3D(1, 0, 8.88178e-15, 0, 0.999999, 0, 5.11591e-13, 0, 1.28985, 0, 0, -0.0241461)
 shape = SubResource("BoxShape3D_swnh0")
 
-[node name="WrongEntranceArea3D3" type="Area3D" parent="RiddleRoom2" unique_id=695629104]
-transform = Transform3D(0.717982, 0, 6.75016e-14, 0, 1.16604, 0, 2.27374e-13, 0, 1, -0.381608, 2.19042, -3.77466)
-collision_layer = 2
-script = ExtResource("28_vfrdu")
-
 [node name="WrongEntranceArea3D4" type="Area3D" parent="RiddleRoom2" unique_id=348710859]
 transform = Transform3D(0.717982, 0, 6.75016e-14, 0, 1.16604, 0, 2.27374e-13, 0, 1, 0.479618, 2.19042, -3.77466)
 collision_layer = 2
 script = ExtResource("28_vfrdu")
 
-[node name="RightEntranceArea3D" type="Area3D" parent="RiddleRoom2" unique_id=1515432505]
-transform = Transform3D(0.761414, 0, 2.70006e-13, 0, 1.16604, 0, 5.96856e-13, 0, 3.31523, -3.38683, 2.19042, -5.76857)
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="RiddleRoom2/WrongEntranceArea3D4" unique_id=1871762486]
+transform = Transform3D(1.0604918, 0, 7.1054274e-15, 0, 0.99999946, 0, 4.121148e-13, 0, 1.2898502, -0.002414465, 0, -0.024143219)
+shape = SubResource("BoxShape3D_swnh0")
+
+[node name="RightEntranceArea3D" type="Area3D" parent="RiddleRoom2" unique_id=695629104]
+transform = Transform3D(0.717982, 0, 6.750156e-14, 0, 1.16604, 0, 2.2737368e-13, 0, 1, -0.34978127, 2.19042, -3.7746582)
 collision_layer = 2
 script = ExtResource("29_frfs0")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RiddleRoom2/RightEntranceArea3D" unique_id=17833509]
-transform = Transform3D(1, 0, 1.06581e-14, 0, 0.999999, 0, 4.83169e-13, 0, 1.28985, 3.92752, 0.02994, -0.0241432)
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="RiddleRoom2/RightEntranceArea3D" unique_id=627204772]
+transform = Transform3D(1.0604918, 0, 7.1054274e-15, 0, 0.99999917, 0, 4.121148e-13, 0, 1.2898502, -0.036883354, 0, -0.024143219)
 shape = SubResource("BoxShape3D_swnh0")
 
 [node name="Floor" type="Node3D" parent="RiddleRoom2" unique_id=812095860]
 transform = Transform3D(1.02623, 0, -4.26326e-14, 0, 1, 0, 1.42109e-13, 0, 1.23042, 0.0621676, 1.78814e-07, 0.192848)
-
-[node name="GroovedConcretePlaneMesh" parent="RiddleRoom2/Floor" unique_id=387635799]
-transform = Transform3D(1.23338, 0, 0, 0, 1.00231, 0, 1.42109e-14, 0, 1.00231, -2.78965, 1.35572, -2.3152)
-skeleton = NodePath("../../../RiddleRoom1")
-
-[node name="GroovedConcretePlaneMesh5" parent="RiddleRoom2/Floor" unique_id=2002285985]
-transform = Transform3D(1.23338, 0, 0, 0, 1.00231, 0, 0, 0, 1.00231, -2.78965, 1.35572, -0.295341)
-skeleton = NodePath("../../../RiddleRoom1")
-
-[node name="GroovedConcretePlaneMesh6" parent="RiddleRoom2/Floor" unique_id=365444060]
-transform = Transform3D(1.23338, 0, 0, 0, 1.00231, 0, 0, 0, 1.04398, -2.78965, 1.35572, 1.75473)
-skeleton = NodePath("../../../RiddleRoom1")
-
-[node name="GroovedConcretePlaneMesh2" parent="RiddleRoom2/Floor" unique_id=990139759]
-transform = Transform3D(1.26665, 0, 1.77636e-14, 0, 0.993311, 0, 9.9476e-14, 0, 0.993311, -0.303196, 1.35572, -2.3152)
-skeleton = NodePath("../../../RiddleRoom1")
-
-[node name="GroovedConcretePlaneMesh3" parent="RiddleRoom2/Floor" unique_id=474568576]
-transform = Transform3D(1.26665, 0, 1.77636e-14, 0, 0.993311, 0, 1.56319e-13, 0, 0.993311, -0.303196, 1.35572, -0.325399)
-skeleton = NodePath("../../../RiddleRoom1")
-
-[node name="GroovedConcretePlaneMesh4" parent="RiddleRoom2/Floor" unique_id=1052819555]
-transform = Transform3D(1.26665, 0, 2.84217e-14, 0, 0.993311, 0, 3.69482e-13, 0, 1.10264, -0.306697, 1.35141, 1.72022)
-skeleton = NodePath("../../../RiddleRoom1")
 
 [node name="CorridorEntrance" type="Node3D" parent="." unique_id=1994039655]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, -0.101685, 29.9168, 3, -5.2316)
@@ -632,59 +504,26 @@ transform = Transform3D(2, 0, 0, 0, 5, 0, 0, 0, 131.115, 4.86798, -0.0483899, 42
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="CorridorEntrance3/BasicBlock8" unique_id=2012238395]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.111911, 0, 0)
-
 [node name="BasicBlock9" parent="CorridorEntrance3" unique_id=237865332 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(2, 0, 0, 0, 5, 0, 0, 0, 131.115, 10.2743, -0.0483899, 42.2984)
 block_color_group = 3
 block_style = 2
-
-[node name="GoldTexturedBoxMesh" parent="CorridorEntrance3/BasicBlock9" unique_id=1075262991]
 
 [node name="BasicBlock10" parent="CorridorEntrance3" unique_id=1652810253 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(2, 0, 0, 0, 5, 0, 0, 0, 131.115, 15.7081, -0.0483899, 42.2984)
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="CorridorEntrance3/BasicBlock10" unique_id=580837685]
-
 [node name="BasicBlock11" parent="CorridorEntrance3" unique_id=1268803809 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(2, 0, 0, 0, 5, 0, 0, 0, 131.115, 21.1145, -0.0483899, 42.2984)
 block_color_group = 3
 block_style = 2
-
-[node name="GoldTexturedBoxMesh" parent="CorridorEntrance3/BasicBlock11" unique_id=2023428090]
 
 [node name="BasicBlock15" parent="CorridorEntrance3" unique_id=2079448829 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(45.6244, 0, 0, 0, 8.09704, 0, 0, 0, -150.955, 21.7609, 5.91095, 45.2001)
 
 [node name="CorridorEntraceFloor" type="Node3D" parent="CorridorEntrance3" unique_id=218016691]
 transform = Transform3D(-3.6, 0, -2.47295e-07, 0, 2.55081, 0, -2.24801e-06, 0, 20.2052, 7.5708, -4.99633, 43.2735)
-
-[node name="GroovedConcretePlaneMesh" parent="CorridorEntrance3/CorridorEntraceFloor" unique_id=645309966]
-transform = Transform3D(1.23338, 0, 0, 0, 1.00231, 0, 1.42109e-14, 0, 1.00231, -2.78965, 1.35572, -2.3152)
-skeleton = NodePath("../../../RiddleRoom1")
-
-[node name="GroovedConcretePlaneMesh5" parent="CorridorEntrance3/CorridorEntraceFloor" unique_id=42304585]
-transform = Transform3D(1.23338, 0, 0, 0, 1.00231, 0, 0, 0, 1.00231, -2.78965, 1.35572, -0.295341)
-skeleton = NodePath("../../../RiddleRoom1")
-
-[node name="GroovedConcretePlaneMesh6" parent="CorridorEntrance3/CorridorEntraceFloor" unique_id=1350914586]
-transform = Transform3D(1.23338, 0, 0, 0, 1.00231, 0, 0, 0, 1.04398, -2.78965, 1.35572, 1.75473)
-skeleton = NodePath("../../../RiddleRoom1")
-
-[node name="GroovedConcretePlaneMesh2" parent="CorridorEntrance3/CorridorEntraceFloor" unique_id=632730761]
-transform = Transform3D(1.26665, 0, 1.77636e-14, 0, 0.993311, 0, 9.9476e-14, 0, 0.993311, -0.303196, 1.35572, -2.3152)
-skeleton = NodePath("../../../RiddleRoom1")
-
-[node name="GroovedConcretePlaneMesh3" parent="CorridorEntrance3/CorridorEntraceFloor" unique_id=710353061]
-transform = Transform3D(1.26665, 0, 1.77636e-14, 0, 0.993311, 0, 1.56319e-13, 0, 0.993311, -0.303196, 1.35572, -0.325399)
-skeleton = NodePath("../../../RiddleRoom1")
-
-[node name="GroovedConcretePlaneMesh4" parent="CorridorEntrance3/CorridorEntraceFloor" unique_id=608257183]
-transform = Transform3D(1.26665, 0, 2.84217e-14, 0, 0.993311, 0, 3.69482e-13, 0, 1.10264, -0.306697, 1.35141, 1.72022)
-skeleton = NodePath("../../../RiddleRoom1")
 
 [node name="CorridorEntrance4" type="Node3D" parent="." unique_id=1254276025]
 transform = Transform3D(0.485642, 0, 0, 0, 1, 0, 0, 0, -0.14, 20.0738, 3, 52.2624)
@@ -694,44 +533,20 @@ transform = Transform3D(2, 0, 0, 0, 5, 0, 0, 0, 131.115, 4.86798, -0.0483899, 42
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="CorridorEntrance4/BasicBlock8" unique_id=1919894269]
-
 [node name="BasicBlock9" parent="CorridorEntrance4" unique_id=1127994485 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(2, 0, 0, 0, 5, 0, 0, 0, 131.115, 13.1012, -0.0483899, 42.2984)
 block_color_group = 3
 block_style = 2
-
-[node name="GoldTexturedBoxMesh" parent="CorridorEntrance4/BasicBlock9" unique_id=1658939363]
 
 [node name="BasicBlock10" parent="CorridorEntrance4" unique_id=1734134222 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(2, 0, 0, 0, 5, 0, 0, 0, 131.115, 21.0668, -0.0483899, 42.2984)
 block_color_group = 3
 block_style = 2
 
-[node name="GoldTexturedBoxMesh" parent="CorridorEntrance4/BasicBlock10" unique_id=992089606]
-
 [node name="BasicBlock15" parent="CorridorEntrance4" unique_id=1002385374 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(30.4948, 0, 0, 0, 8.09704, 0, 0, 0, -150.955, 15.5055, 5.91095, 56.4051)
 
-[node name="GoldTexturedBoxMesh" parent="CorridorEntrance4/BasicBlock15" unique_id=1032156407]
-
 [node name="Floor" type="Node3D" parent="CorridorEntrance4" unique_id=641048037]
-
-[node name="GroovedConcretePlaneMesh" parent="CorridorEntrance4/Floor" unique_id=892639584]
-transform = Transform3D(7.27261, 0, 0, 0, 1, 0, 0, 0, 22.9778, 12.8733, -1.50278, -0.0600586)
-skeleton = NodePath("")
-
-[node name="GroovedConcretePlaneMesh2" parent="CorridorEntrance4/Floor" unique_id=1234845018]
-transform = Transform3D(7.27261, 0, 0, 0, 1, 0, 0, 0, 22.9778, 12.8733, -1.50278, 45.9835)
-skeleton = NodePath("")
-
-[node name="GroovedConcretePlaneMesh3" parent="CorridorEntrance4/Floor" unique_id=833320127]
-transform = Transform3D(7.27261, 0, 0, 0, 1, 0, 0, 0, 22.9778, 12.8733, -1.50278, 92.2121)
-skeleton = NodePath("")
-
-[node name="GroovedConcretePlaneMesh4" parent="CorridorEntrance4/Floor" unique_id=940382720]
-transform = Transform3D(7.27261, 0, 0, 0, 1, 0, 0, 0, 44.4692, 12.8733, -1.50278, 159.561)
-skeleton = NodePath("")
 
 [node name="CorridorMiddle" type="Node3D" parent="." unique_id=307712697]
 transform = Transform3D(-4.37114e-08, 0, 0.14, 0, 1, 0, 1, 0, 6.11959e-09, 53, 3, -6.77921)
@@ -782,13 +597,12 @@ autoplay = true
 [connection signal="body_entered" from="RiddleRoom1/WrongEntranceArea3D3" to="RiddleRoom1/WrongEntranceArea3D3" method="_on_body_entered"]
 [connection signal="body_entered" from="RiddleRoom2/WrongEntranceArea3D" to="." method="_on_wrong_entrance_area_3d_body_entered"]
 [connection signal="body_entered" from="RiddleRoom2/WrongEntranceArea3D" to="RiddleRoom2/WrongEntranceArea3D" method="_on_body_entered"]
-[connection signal="body_entered" from="RiddleRoom2/WrongEntranceArea3D5" to="." method="_on_wrong_entrance_area_3d_body_entered"]
-[connection signal="body_entered" from="RiddleRoom2/WrongEntranceArea3D5" to="RiddleRoom2/WrongEntranceArea3D5" method="_on_body_entered"]
+[connection signal="body_entered" from="RiddleRoom2/WrongEntranceArea3D3" to="." method="_on_wrong_entrance_area_3d_body_entered"]
+[connection signal="body_entered" from="RiddleRoom2/WrongEntranceArea3D3" to="RiddleRoom2/WrongEntranceArea3D3" method="_on_body_entered"]
 [connection signal="body_entered" from="RiddleRoom2/WrongEntranceArea3D6" to="." method="_on_wrong_entrance_area_3d_body_entered"]
 [connection signal="body_entered" from="RiddleRoom2/WrongEntranceArea3D6" to="RiddleRoom2/WrongEntranceArea3D6" method="_on_body_entered"]
 [connection signal="body_entered" from="RiddleRoom2/WrongEntranceArea3D2" to="." method="_on_wrong_entrance_area_3d_body_entered"]
 [connection signal="body_entered" from="RiddleRoom2/WrongEntranceArea3D2" to="RiddleRoom2/WrongEntranceArea3D2" method="_on_body_entered"]
-[connection signal="body_entered" from="RiddleRoom2/WrongEntranceArea3D3" to="RiddleRoom2/WrongEntranceArea3D3" method="_on_body_entered"]
 [connection signal="body_entered" from="RiddleRoom2/WrongEntranceArea3D4" to="RiddleRoom2/WrongEntranceArea3D4" method="_on_body_entered"]
 [connection signal="body_entered" from="RiddleRoom2/RightEntranceArea3D" to="RiddleRoom2/RightEntranceArea3D" method="_on_body_entered"]
 [connection signal="body_exited" from="RiddleRoom2/RightEntranceArea3D" to="." method="_on_right_entrance_area_3d_body_exited"]

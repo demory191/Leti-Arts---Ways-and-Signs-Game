@@ -18,9 +18,9 @@ config/name="Doors and Symbols (Leti Arts project)"
 run/main_scene="res://Scenes/title_screen.tscn"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
-[autoload]
+[display]
 
-Settings="*res://Global/Settings.gd"
+window/stretch/mode="canvas_items"
 
 [dotnet]
 
@@ -61,4 +61,5 @@ moveUp={
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
 anti_aliasing/canvas_textures/default_texture_repeat=1
