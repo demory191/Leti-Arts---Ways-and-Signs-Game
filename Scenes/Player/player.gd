@@ -57,4 +57,3 @@ func shoot():
 	bulletInst.look_at((gunRay.get_collision_point()+gunRay.get_collision_normal()),Vector3.BACK)
 	print(gunRay.get_collision_point())
 	print(gunRay.get_collision_point()+gunRay.get_collision_normal())
-
