@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://oyraihvtv1dt"]
 
-[ext_resource type="Texture2D" uid="uid://ukrqfdc4eheq" path="res://Assets/gameover_screen_image.png" id="1_0gua7"]
+[ext_resource type="Texture2D" uid="uid://c8g4nl1dwiw1n" path="res://Assets/gameover_screen_image.png" id="1_0gua7"]
 
 [node name="GameOverScreen" type="Node2D" unique_id=1841118023]
 
 [node name="BackgroundImage" type="Sprite2D" parent="." unique_id=727893361]
-position = Vector2(578, 324.5)
-scale = Vector2(0.166041, 0.16413)
+position = Vector2(644.5, 359)
+scale = Vector2(0.18639909, 0.18366313)
 texture = ExtResource("1_0gua7")

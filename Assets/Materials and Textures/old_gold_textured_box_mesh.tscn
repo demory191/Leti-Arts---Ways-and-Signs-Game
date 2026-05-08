@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://ccm05otqx54v2"]
 
-[ext_resource type="Texture2D" uid="uid://dby3fmo3ujxwg" path="res://Assets/Materials and Textures/old_gold_wall/old_gold_wall.jpg" id="1_aw2mo"]
+[ext_resource type="Texture2D" uid="uid://bfsk6257ndpdt" path="res://Assets/Materials and Textures/old_gold_wall/old_gold_2k.jpg" id="1_aw2mo"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aw2mo"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tad1i"]
 albedo_texture = ExtResource("1_aw2mo")
 
 [sub_resource type="BoxMesh" id="BoxMesh_jayst"]
-material = SubResource("StandardMaterial3D_aw2mo")
+material = SubResource("StandardMaterial3D_tad1i")
 
 [node name="GoldTexturedBoxMesh" type="MeshInstance3D" unique_id=997913889]
 mesh = SubResource("BoxMesh_jayst")

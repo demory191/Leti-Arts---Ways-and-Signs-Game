@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://cbk60ludaclvn"]
 
-[ext_resource type="Texture2D" uid="uid://c5b757l8r7yl1" path="res://Assets/temp_level1_completed_message.png" id="1_iyu6x"]
+[ext_resource type="Texture2D" uid="uid://i1s04j16sb1x" path="res://Assets/level_1_completed_screen.png" id="1_iyu6x"]
 
 [node name="LevelCompletedScreen" type="Node2D" unique_id=1674654321]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1138537467]
-position = Vector2(576, 325)
-scale = Vector2(1.3949, 1.13684)
+position = Vector2(641.50006, 364)
+scale = Vector2(0.1867226, 0.18481013)
 texture = ExtResource("1_iyu6x")
