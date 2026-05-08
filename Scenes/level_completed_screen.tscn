@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cbk60ludaclvn"]
 
-[ext_resource type="Texture2D" uid="uid://i1s04j16sb1x" path="res://Assets/level_1_completed_screen.png" id="1_iyu6x"]
+[ext_resource type="Texture2D" uid="uid://i1s04j16sb1x" path="res://Scenes/level_1_completed_screen.png" id="1_iyu6x"]
 
 [node name="LevelCompletedScreen" type="Node2D" unique_id=1674654321]
 

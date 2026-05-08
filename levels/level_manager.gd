@@ -16,7 +16,6 @@ func _ready():
 func _process(delta):
 	pass
 
-
 func _on_wrong_entrance_area_3d_2_body_entered(body):
 	print("chance lost")
 	var chances_left_label = get_node("UI/ChancesLeft")

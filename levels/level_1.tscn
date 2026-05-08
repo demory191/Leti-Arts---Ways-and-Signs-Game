@@ -5,20 +5,22 @@
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="3_y37eu"]
 [ext_resource type="Texture2D" uid="uid://c3d6hemu80vpt" path="res://addons/devblocks/textures/purple/texture_01.png" id="4_a6cad"]
 [ext_resource type="PackedScene" uid="uid://ccm05otqx54v2" path="res://Assets/Materials and Textures/old_gold_textured_box_mesh.tscn" id="5_jkxa6"]
-[ext_resource type="Texture2D" uid="uid://c7rgphwcia2c4" path="res://Assets/Symbols_chart_half.png" id="5_l53as"]
-[ext_resource type="Texture2D" uid="uid://b1gxbhoxvw78s" path="res://Assets/Wake_room_Message.png" id="6_3sk1a"]
-[ext_resource type="Texture2D" uid="uid://crglx0ixp16u6" path="res://Assets/Heiroglyphic symbols/SCARAB_symbol.png" id="7_aerfg"]
-[ext_resource type="Texture2D" uid="uid://dmnvegyl2se6s" path="res://Assets/Heiroglyphic symbols/BA.png" id="8_betor"]
-[ext_resource type="Texture2D" uid="uid://cki484kx0t4gl" path="res://Assets/Heiroglyphic symbols/UDJAT.png" id="8_nmsli"]
-[ext_resource type="Texture2D" uid="uid://ds05lxxikqkkg" path="res://Assets/ba_riddle.png" id="9_betor"]
-[ext_resource type="Texture2D" uid="uid://btrvp2hkr2cho" path="res://Assets/Heiroglyphic symbols/Ordinary-Flamengo.png" id="12_vjtdm"]
-[ext_resource type="Texture2D" uid="uid://b1lv7q5smnajv" path="res://Assets/Scarab riddle (cropped).png" id="13_bgw3c"]
+[ext_resource type="Texture2D" uid="uid://b1gxbhoxvw78s" path="res://Assets/Symbols and Riddles/Wake_room_Message.png" id="6_3sk1a"]
+[ext_resource type="Texture2D" uid="uid://desadlhybbvtq" path="res://Assets/Symbols and Riddles/Symbols_chart (Cropped).png" id="6_udfhf"]
+[ext_resource type="Texture2D" uid="uid://crglx0ixp16u6" path="res://Assets/Symbols and Riddles/SCARAB_symbol.png" id="7_aerfg"]
+[ext_resource type="Texture2D" uid="uid://cki484kx0t4gl" path="res://Assets/Symbols and Riddles/UDJAT.png" id="8_nmsli"]
+[ext_resource type="Texture2D" uid="uid://byghleiqiyw4t" path="res://Assets/Symbols and Riddles/TJET.png" id="10_ryfpa"]
+[ext_resource type="Texture2D" uid="uid://3p0nql265s5e" path="res://Assets/Symbols and Riddles/DJED.png" id="11_ntdhj"]
+[ext_resource type="Texture2D" uid="uid://jgvhxnhv57wj" path="res://Assets/Symbols and Riddles/djed_riddle.png" id="12_0fu15"]
 [ext_resource type="PackedScene" uid="uid://b2034yvlw1xhw" path="res://Assets/Materials and Textures/grooved_concrete_plane_mesh.tscn" id="13_w75he"]
-[ext_resource type="Texture2D" uid="uid://pcdw05djkjmp" path="res://Assets/Heiroglyphic symbols/KA.png" id="14_bgw3c"]
+[ext_resource type="Texture2D" uid="uid://byo68448f6phy" path="res://Assets/Symbols and Riddles/ANKH.png" id="14_4knja"]
 [ext_resource type="Script" uid="uid://cm0nh2p1nv1fs" path="res://levels/WrongEntranceArea3D.gd" id="14_dmjim"]
-[ext_resource type="Texture2D" uid="uid://d1w5h47gip0a4" path="res://Assets/Heiroglyphic symbols/MES.png" id="15_7nvrk"]
-[ext_resource type="Texture2D" uid="uid://cqmye8ph52e62" path="res://Assets/Heiroglyphic symbols/SEMA.png" id="16_jkxa6"]
-[ext_resource type="Texture2D" uid="uid://dvfjcrhksptsh" path="res://Assets/ka_riddle_3.png" id="17_w75he"]
+[ext_resource type="Texture2D" uid="uid://d1w5h47gip0a4" path="res://Assets/Symbols and Riddles/MES.png" id="15_7nvrk"]
+[ext_resource type="Texture2D" uid="uid://d0o3pdjr44nnp" path="res://Assets/Symbols and Riddles/SHEN.png" id="15_voubc"]
+[ext_resource type="Texture2D" uid="uid://gvgssvnxlqxr" path="res://Assets/Symbols and Riddles/NEFER.png" id="16_0x1rk"]
+[ext_resource type="Texture2D" uid="uid://cqmye8ph52e62" path="res://Assets/Symbols and Riddles/SEMA.png" id="16_jkxa6"]
+[ext_resource type="Texture2D" uid="uid://b61gh0em4c40v" path="res://Assets/Symbols and Riddles/nefer_riddle.png" id="17_pnpm1"]
+[ext_resource type="Texture2D" uid="uid://dkxeofl0nn6h3" path="res://Assets/Symbols and Riddles/tjet_riddle.png" id="21_06ecp"]
 [ext_resource type="AudioStream" uid="uid://d1ew6dpxy8b8g" path="res://Assets/Audio/ancient_egypt_background_tune.mp3" id="22_udfhf"]
 [ext_resource type="Script" uid="uid://cba7q4mn8lhr8" path="res://WrongEntranceRiddleRoom2Area3D.gd" id="28_vfrdu"]
 [ext_resource type="Script" uid="uid://p5f7symqmyhi" path="res://RightEntranceArea3D.gd" id="29_frfs0"]
@@ -142,12 +144,12 @@ block_style = 1
 transform = Transform3D(0.6987098, -0.7077253, 0.104544826, 0.33070803, 0.4491057, 0.83002186, -0.6343791, -0.54537064, 0.54784495, -5.02355, 4.901996, 1.240241)
 
 [node name="SymbolsChart" type="Sprite3D" parent="StartRoom" unique_id=197111191]
-transform = Transform3D(-2.8177e-08, 0, -1.00649, 0, 0.563819, 0, 0.644614, 0, -4.39952e-08, -5.65313, 2.6898, -0.268881)
+transform = Transform3D(-2.664711e-08, 0, -1.00649, 0, 0.37414232, 0, 0.6096142, 0, -4.39952e-08, -5.6531296, 2.7380192, -0.26888084)
 flip_h = true
-texture = ExtResource("5_l53as")
+texture = ExtResource("6_udfhf")
 
 [node name="WakeRoomMessage" type="Sprite3D" parent="StartRoom" unique_id=693216825]
-transform = Transform3D(-1.51613e-08, 0, -1.00649, 0, 0.287371, 0, 0.34685, 0, -4.39952e-08, -5.66736, 4.12652, -0.248039)
+transform = Transform3D(-1.51613e-08, 0, -1.00649, 0, 0.287371, 0, 0.34685, 0, -4.39952e-08, -5.6673603, 4.25702, -0.24803925)
 flip_h = true
 texture = ExtResource("6_3sk1a")
 
@@ -224,7 +226,7 @@ block_color_group = 3
 block_style = 2
 
 [node name="GoldTexturedBoxMesh" parent="RiddleRoom0/BasicBlock14" unique_id=171006425 instance=ExtResource("5_jkxa6")]
-transform = Transform3D(1.0248739, 1.1368684e-13, 5.684342e-14, 8.881784e-16, 1, -4.2351647e-22, -8.881784e-16, -1.2705494e-21, 1.0493201, 0, 0, 0)
+transform = Transform3D(1.0248739, 1.7053026e-13, 8.526513e-14, 8.881784e-16, 1, -4.2351647e-22, -1.7763568e-15, -2.1175824e-21, 1.0493201, -0.029380798, 5.9604645e-08, 5.2928925e-05)
 
 [node name="BasicBlock16" parent="RiddleRoom0" unique_id=1844722000 instance=ExtResource("2_vsnoi")]
 transform = Transform3D(-0.555556, -3.896652e-07, -9.1333885e-07, -4.8568246e-08, 4.45725, 0, -8.3886626e-08, -5.883781e-14, 6.04877, -1.52575, 3.4601, -6.37958)
@@ -254,24 +256,24 @@ transform = Transform3D(0.140568, 4.00433e-09, 4.32989e-08, -7.84777e-09, -3.135
 visible = false
 texture = ExtResource("7_aerfg")
 
-[node name="BaSymbol" type="Sprite3D" parent="RiddleRoom0" unique_id=2131967937]
+[node name="TjetSymbol" type="Sprite3D" parent="RiddleRoom0" unique_id=2131967937]
 transform = Transform3D(0.140568, -4.24108e-09, -4.58586e-08, 8.3119e-09, 0.0717244, 1.16993e-13, 8.31187e-09, 2.61554e-15, 0.775555, -0.38357, 3.02944, -3.34058)
-texture = ExtResource("8_betor")
+texture = ExtResource("10_ryfpa")
 
 [node name="UdjatSymbol" type="Sprite3D" parent="RiddleRoom0" unique_id=1598447387]
 transform = Transform3D(0.152319, 3.94669e-09, 4.3299e-08, -8.50384e-09, -3.09006e-09, 0.775555, 8.5038e-09, -0.0706926, -3.39007e-08, -2.64464, 1.37012, -2.92008)
 visible = false
 
-[node name="UdjatSymbol2" type="Sprite3D" parent="RiddleRoom0" unique_id=1522376909]
+[node name="DjedSymbol" type="Sprite3D" parent="RiddleRoom0" unique_id=1522376909]
 transform = Transform3D(0.152319, -4.1801e-09, -4.58585e-08, 9.00673e-09, 0.0706926, 1.22565e-13, 9.0067e-09, 1.07326e-14, 0.775555, -2.64464, 3.04273, -3.35505)
-texture = ExtResource("8_nmsli")
+texture = ExtResource("11_ntdhj")
 
-[node name="BaRiddle" type="Sprite3D" parent="RiddleRoom0" unique_id=2014288854]
-transform = Transform3D(0.380785, 0, 0, 0, 0.41941312, 0, 1.5987212e-14, 0, 1, -1.4922991, 4.0022173, -3.1883578)
-texture = ExtResource("9_betor")
+[node name="DjedRiddle" type="Sprite3D" parent="RiddleRoom0" unique_id=2014288854]
+transform = Transform3D(0.3280526, 0, 0, 0, 0.24626288, 0, 1.4210855e-14, 0, 1, -1.4922991, 3.9835067, -3.1883578)
+texture = ExtResource("12_0fu15")
 
 [node name="WrongEntranceArea3D2" type="Area3D" parent="RiddleRoom0" unique_id=1188459954]
-transform = Transform3D(2.10541, 0, 2.62901e-13, 0, 1, 0, -1.13687e-13, 0, 1, -2.69987, 2.32369, -3.77467)
+transform = Transform3D(2.10541, 0, 2.629008e-13, 0, 1, 0, -1.1368684e-13, 0, 1, -0.47042084, 2.32369, -3.7746701)
 collision_layer = 2
 script = ExtResource("14_dmjim")
 
@@ -396,24 +398,24 @@ block_style = 2
 [node name="GoldTexturedBoxMesh" parent="RiddleRoom1/BasicBlock19" unique_id=1964789503 instance=ExtResource("5_jkxa6")]
 transform = Transform3D(1.1220746, 0, 5.684342e-14, 0, 1.0206112, 0, 3.5527137e-15, 0, 1, 0, 0, 0)
 
-[node name="ScarabSymbol" type="Sprite3D" parent="RiddleRoom1" unique_id=136186285]
-transform = Transform3D(0.0786634, 1.37796e-14, 4.583e-13, 2.47218e-14, 0.0686114, 1.19779e-13, -8.88178e-16, 1.4385e-15, 0.775555, -3.04868, 3.01456, -3.45049)
-texture = ExtResource("7_aerfg")
+[node name="AnkhSymbol" type="Sprite3D" parent="RiddleRoom1" unique_id=136186285]
+transform = Transform3D(0.0786634, 1.37796014e-14, 4.689582e-13, 2.4721802e-14, 0.0686114, 1.19779e-13, -8.881784e-16, 1.4385e-15, 0.775555, -3.0486808, 3.0517027, -3.4090004)
+texture = ExtResource("14_4knja")
 
-[node name="UdjatSymbol" type="Sprite3D" parent="RiddleRoom1" unique_id=416560078]
+[node name="ShenSymbol" type="Sprite3D" parent="RiddleRoom1" unique_id=416560078]
 transform = Transform3D(0.078788, 2.46716e-15, 5.61329e-13, 4.56135e-14, 0.0709439, 2.03346e-13, 3.10862e-14, 2.02825e-14, 0.775553, 0.0275545, 3.0367, -3.39261)
-texture = ExtResource("8_nmsli")
+texture = ExtResource("15_voubc")
 
-[node name="FlamengoSymbol" type="Sprite3D" parent="RiddleRoom1" unique_id=529677235]
+[node name="NeferSymbol" type="Sprite3D" parent="RiddleRoom1" unique_id=529677235]
 transform = Transform3D(0.076489, -9.86865e-15, 6.96332e-13, 2.43736e-14, 0.0747956, 2.507e-13, 8.88178e-15, 1.2749e-14, 0.775552, -1.48761, 3.05255, -3.46769)
-texture = ExtResource("12_vjtdm")
+texture = ExtResource("16_0x1rk")
 
-[node name="ScarabRiddle" type="Sprite3D" parent="RiddleRoom1" unique_id=965571114]
-transform = Transform3D(0.320702, 0, 3.5527137e-15, 0, 0.24003202, 0, 1.0658141e-14, 0, 1, -1.4640665, 3.99143, -3.2288933)
-texture = ExtResource("13_bgw3c")
+[node name="NeferRiddle" type="Sprite3D" parent="RiddleRoom1" unique_id=965571114]
+transform = Transform3D(0.33105308, 0, 3.5527137e-15, 0, 0.24003202, 0, 1.0658141e-14, 0, 1, -1.464066, 3.99143, -3.2288952)
+texture = ExtResource("17_pnpm1")
 
 [node name="WrongEntranceArea3D2" type="Area3D" parent="RiddleRoom1" unique_id=444401590]
-transform = Transform3D(1, 0, 6.75016e-14, 0, 0.999999, 0, -5.68434e-14, 0, 1, -1.51015, 2.32369, -3.77468)
+transform = Transform3D(1, 0, 6.750156e-14, 0, 0.999999, 0, -5.684342e-14, 0, 1, -2.9601922, 2.32369, -3.774685)
 collision_layer = 2
 script = ExtResource("14_dmjim")
 
@@ -564,29 +566,29 @@ block_style = 2
 [node name="GoldTexturedBoxMesh" parent="RiddleRoom2/BasicBlock19" unique_id=1430039820 instance=ExtResource("5_jkxa6")]
 transform = Transform3D(1.0019575, 0, 0, 0, 1.0233669, 0, 3.5527137e-15, 0, 1, 0, 0, 0)
 
-[node name="OrdinaryFlamengo" type="Sprite3D" parent="RiddleRoom2" unique_id=614906007]
+[node name="UdjatSymbol" type="Sprite3D" parent="RiddleRoom2" unique_id=614906007]
 transform = Transform3D(0.0601151, 1.42116e-09, 1.62091e-08, -1.25639e-09, 0.0679989, 1.16993e-13, -1.25638e-09, 1.98175e-15, 0.775555, -2.37316, 3.05315, -3.41835)
-texture = ExtResource("12_vjtdm")
-
-[node name="KaSymbol" type="Sprite3D" parent="RiddleRoom2" unique_id=1612787325]
-transform = Transform3D(0.0438006, 1.33502e-09, 1.62091e-08, -9.15426e-10, 0.0638779, 1.19779e-13, -9.15381e-10, -3.19315e-15, 0.775555, -0.380182, 3.09537, -3.41835)
-texture = ExtResource("14_bgw3c")
-
-[node name="UdjatSymbol" type="Sprite3D" parent="RiddleRoom2" unique_id=1911921183]
-transform = Transform3D(0.0702117, 1.71259e-09, 1.62092e-08, -1.46736e-09, 0.0819435, 2.06131e-13, -1.46734e-09, 2.43273e-14, 0.775553, -3.43342, 3.08875, -3.46762)
 texture = ExtResource("8_nmsli")
 
-[node name="MesSymbol" type="Sprite3D" parent="RiddleRoom2" unique_id=717905541]
-transform = Transform3D(0.0426759, 1.35898e-09, 2.0341e-08, -8.91884e-10, 0.0650247, 2.58675e-13, -8.91885e-10, 1.54731e-14, 0.973244, 0.494308, 3.14446, -3.42946)
-texture = ExtResource("15_7nvrk")
-
-[node name="SemaSymbol" type="Sprite3D" parent="RiddleRoom2" unique_id=587215275]
-transform = Transform3D(0.0572945, 1.59404e-09, 1.62094e-08, -1.19746e-09, 0.0762708, 2.53486e-13, -1.19741e-09, 1.74524e-14, 0.775552, -1.33683, 3.06739, -3.46441)
+[node name="SemaSymbol" type="Sprite3D" parent="RiddleRoom2" unique_id=1612787325]
+transform = Transform3D(0.0438006, 1.33502e-09, 1.62091e-08, -9.15426e-10, 0.0638779, 1.19779e-13, -9.15381e-10, -3.19315e-15, 0.775555, -0.380182, 3.09537, -3.41835)
 texture = ExtResource("16_jkxa6")
 
-[node name="KaRiddle" type="Sprite3D" parent="RiddleRoom2" unique_id=978672669]
-transform = Transform3D(0.20873304, 0, 3.5527137e-15, 0, 0.232605, 0, 3.1974423e-14, 0, 1, -1.4302304, 4.00844, -3.2883148)
-texture = ExtResource("17_w75he")
+[node name="TjetSymbol" type="Sprite3D" parent="RiddleRoom2" unique_id=1911921183]
+transform = Transform3D(0.0702117, 1.71259e-09, 1.62092e-08, -1.46736e-09, 0.0819435, 2.06131e-13, -1.46734e-09, 2.43273e-14, 0.775553, -3.43342, 3.08875, -3.46762)
+texture = ExtResource("10_ryfpa")
+
+[node name="ShenSymbol" type="Sprite3D" parent="RiddleRoom2" unique_id=717905541]
+transform = Transform3D(0.0426759, 1.35898e-09, 2.0341e-08, -8.91884e-10, 0.0650247, 2.58675e-13, -8.91885e-10, 1.54731e-14, 0.973244, 0.494308, 3.14446, -3.42946)
+texture = ExtResource("15_voubc")
+
+[node name="MesSymbol" type="Sprite3D" parent="RiddleRoom2" unique_id=587215275]
+transform = Transform3D(0.0572945, 1.59404e-09, 1.62094e-08, -1.19746e-09, 0.0762708, 2.53486e-13, -1.19741e-09, 1.74524e-14, 0.775552, -1.33683, 3.06739, -3.46441)
+texture = ExtResource("15_7nvrk")
+
+[node name="TjetRiddle" type="Sprite3D" parent="RiddleRoom2" unique_id=978672669]
+transform = Transform3D(0.20873304, 0, 3.5527137e-15, 0, 0.2437756, 0, 3.1974423e-14, 0, 1, -1.4302304, 4.00844, -3.2883148)
+texture = ExtResource("21_06ecp")
 
 [node name="WrongEntranceArea3D" type="Area3D" parent="RiddleRoom2" unique_id=92405830]
 transform = Transform3D(0.761414, 0, 6.75016e-14, 0, 1.16604, 0, 1.27898e-13, 0, 1, -1.33581, 2.19042, -3.77466)
@@ -598,7 +600,7 @@ transform = Transform3D(1, 0, 8.88178e-15, 0, 0.999999, 0, 5.11591e-13, 0, 1.289
 shape = SubResource("BoxShape3D_swnh0")
 
 [node name="WrongEntranceArea3D3" type="Area3D" parent="RiddleRoom2" unique_id=1734919135]
-transform = Transform3D(0.76141405, 0, 6.750156e-14, 0, 1.16604, 0, 1.4210855e-13, 0, 1, -3.4624095, 2.19042, -3.7746582)
+transform = Transform3D(0.76141405, 0, 6.750156e-14, 0, 1.16604, 0, 1.4210855e-13, 0, 1, -0.39730716, 2.19042, -3.7746582)
 collision_layer = 2
 script = ExtResource("28_vfrdu")
 
@@ -634,7 +636,7 @@ transform = Transform3D(1.0604918, 0, 7.1054274e-15, 0, 0.99999946, 0, 4.121148e
 shape = SubResource("BoxShape3D_swnh0")
 
 [node name="RightEntranceArea3D" type="Area3D" parent="RiddleRoom2" unique_id=695629104]
-transform = Transform3D(0.717982, 0, 6.750156e-14, 0, 1.16604, 0, 2.2737368e-13, 0, 1, -0.34978127, 2.19042, -3.7746582)
+transform = Transform3D(0.717982, 0, 6.750156e-14, 0, 1.16604, 0, 2.2737368e-13, 0, 1, -3.3932166, 2.19042, -3.7746582)
 collision_layer = 2
 script = ExtResource("29_frfs0")
 
