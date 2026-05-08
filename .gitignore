@@ -36,3 +36,5 @@ obj/
 Thumbs.db
 
 # Assets/*
+
+Exports/*

@@ -157,6 +157,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.508144, 1.61381, -1.78914)
 [node name="GroovedConcretePlaneMesh" parent="StartRoom" unique_id=552682575 instance=ExtResource("13_w75he")]
 transform = Transform3D(1.367887, 0, 0, 0, 1, 0, 0, 0, 1.9396638, -1.4684715, 1.4617066, 5.1610465)
 
+[node name="GroovedConcretePlaneMesh2" parent="StartRoom" unique_id=1968657365 instance=ExtResource("13_w75he")]
+transform = Transform3D(1.367887, 0, 0, 0, 1, 0, 0, 0, 3.135741, 1.5344467, 1.4617066, 0.1084137)
+
+[node name="GroovedConcretePlaneMesh3" parent="StartRoom" unique_id=1793683108 instance=ExtResource("13_w75he")]
+transform = Transform3D(1.367887, 0, 0, 0, 1, 0, 0, 0, 3.135741, -1.1826782, 1.4617066, 0.1084137)
+
+[node name="GroovedConcretePlaneMesh4" parent="StartRoom" unique_id=1688448823 instance=ExtResource("13_w75he")]
+transform = Transform3D(1.6290116, 0, 0, 0, 1, 0, 0, 0, 3.135741, -4.153221, 1.4617066, 0.1084137)
+
 [node name="RiddleRoom0" type="Node3D" parent="." unique_id=174030998]
 transform = Transform3D(-1.74831, 0, -2.00985e-07, 0, 2.55081, 0, 1.52842e-07, 0, -2.299, 23.7505, -1.99633, 16.1852)
 

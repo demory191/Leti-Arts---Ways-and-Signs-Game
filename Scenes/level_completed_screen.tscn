@@ -5,6 +5,6 @@
 [node name="LevelCompletedScreen" type="Node2D" unique_id=1674654321]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1138537467]
-position = Vector2(641.50006, 364)
-scale = Vector2(0.1867226, 0.18481013)
+position = Vector2(962, 544.5)
+scale = Vector2(0.27943304, 0.27620253)
 texture = ExtResource("1_iyu6x")

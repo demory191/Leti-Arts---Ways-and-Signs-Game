@@ -5,6 +5,6 @@
 [node name="GameOverScreen" type="Node2D" unique_id=1841118023]
 
 [node name="BackgroundImage" type="Sprite2D" parent="." unique_id=727893361]
-position = Vector2(644.5, 359)
-scale = Vector2(0.18639909, 0.18366313)
+position = Vector2(964.00006, 542)
+scale = Vector2(0.27866015, 0.27650937)
 texture = ExtResource("1_0gua7")
